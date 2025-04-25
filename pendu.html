@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendu</title>
+    <link rel="stylesheet" href="pendu.css">
+</head>
+<body>
+<div>
+    <h1 style="text-align:center" >Le pendu</h1>
+</div>
+
+<!-- bouton pour generer un mot -->
+<div style="text-align:center">
+    <p>Pour commencer le jeu, appuyez sur le bouton Commencer.
+    <br>Pour réinitialiser le jeu, appuyez sur le bouton Réinitialiser.</p>
+    <button id="start" type="button" name="start" value="commencer">Commencer</button>
+
+<!-- bouton pour reinitialiser -->
+    <button id="reset" type="button" name="reset" value="reset">Réinitialiser</button>
+</div>
+
+
+<!-- montrer le result -->
+<div style="text-align: center">
+    <p id="answer">Vous devez trouver le mot</p>
+    <p id="result"></p>    
+</div>
+
+<!-- Saisie une lettre -->
+<div style="text-align:center">
+    <p>Entrez une lettre</p>
+    <form method="get" action="#">
+        <input type="text" id="inputletter" name="letter">
+        <input type="button" id="valider" value="valider">
+    </form>
+</div>
+
+<!-- liste de lettres devinées -->
+<div style="text-align:center">
+    <p id="guessedLetter">Lettres erronées :</p>
+</div>
+
+<!-- alert erreur de saisie  -->
+<div style="text-align:center">
+    <p id="inputHandle"></p>
+        <!-- alert la lettre deja trouvee -->
+    <p id="alreadyFound"></p>
+</div>
+
+<!-- resultat de jeux won or lost or Game Over -->
+<div style="text-align:center">
+    <h2 id="gameResult"></h2>
+</div>
+
+<!-- dessin de Hangman -->
+<div style="text-align: center"  width="600" height="400">
+    <img id="hangmanIllust" src="">    
+</div>
+
+<div style="text-align: center">
+    <!-- compteur qui reste -->
+    <p id="countDown"> </p>
+    <!-- nombres de lettre trouvee -->
+    <p id="wordsFound"></p>
+
+</div>
+
+<script src="pendu.js"></script>    
+    
+</body>
+</html>
